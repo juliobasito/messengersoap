@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 janv. 2017 13:37:09 by Hibernate Tools 5.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.projetsoap.srcfiles.Error" table="error" catalog="soap" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="errorNumber" type="string">
+            <column name="ErrorNumber" not-null="true" />
+        </property>
+        <property name="message" type="string">
+            <column name="Message" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
