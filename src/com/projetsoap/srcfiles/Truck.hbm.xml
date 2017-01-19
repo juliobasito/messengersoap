@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 janv. 2017 13:37:09 by Hibernate Tools 5.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.projetsoap.srcfiles.Truck" table="truck" catalog="soap" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="brand" type="string">
+            <column name="Brand" not-null="true" />
+        </property>
+        <property name="model" type="string">
+            <column name="Model" not-null="true" />
+        </property>
+        <property name="idCompany" type="int">
+            <column name="Id_Company" not-null="true" />
+        </property>
+        <property name="idCategory" type="int">
+            <column name="Id_Category" not-null="true" />
+        </property>
+        <property name="localisationX" type="string">
+            <column name="LocalisationX" not-null="true" />
+        </property>
+        <property name="localisationY" type="string">
+            <column name="LocalisationY" not-null="true" />
+        </property>
+        <property name="idUser" type="int">
+            <column name="Id_User" not-null="true" />
+        </property>
+        <property name="state" type="string">
+            <column name="State" not-null="true" />
+        </property>
+        <property name="function" type="string">
+            <column name="Function" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

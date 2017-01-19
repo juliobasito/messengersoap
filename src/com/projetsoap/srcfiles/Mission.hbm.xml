@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 janv. 2017 13:37:09 by Hibernate Tools 5.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.projetsoap.srcfiles.Mission" table="mission" catalog="soap" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="title" type="string">
+            <column name="Title" not-null="true" />
+        </property>
+        <property name="idTruck" type="int">
+            <column name="Id_Truck" not-null="true" />
+        </property>
+        <property name="content" type="string">
+            <column name="Content" length="1500" not-null="true" />
+        </property>
+        <property name="start" type="string">
+            <column name="Start" not-null="true" />
+        </property>
+        <property name="end" type="string">
+            <column name="End" not-null="true" />
+        </property>
+        <property name="idStart" type="int">
+            <column name="Id_Start" not-null="true" />
+        </property>
+        <property name="idEnd" type="int">
+            <column name="Id_End" not-null="true" />
+        </property>
+        <property name="shipmentCode" type="string">
+            <column name="ShipmentCode" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
